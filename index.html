@@ -118,6 +118,63 @@
         padding: 28px;
       }
     }
+
+    .hero {
+      align-content: center;
+      gap: 32px;
+    }
+
+    .products {
+      display: block;
+    }
+
+    .products-inner {
+      padding: 48px;
+    }
+
+    h2 {
+      margin: 6px 0 24px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--green);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 18px;
+    }
+
+    .product {
+      margin: 0;
+      background: #fff;
+      border: 1px solid rgba(47,107,63,0.15);
+      border-radius: 18px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product figcaption {
+      padding: 12px 8px;
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    @media (max-width: 800px) {
+      .products-inner {
+        padding: 28px;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+    }
   </style>
 </head>
 <body>
@@ -143,6 +200,75 @@
           <div class="chip">Dry Fruit Laddu</div>
         </div>
         <div class="footer-note">Fresh, flavorful, and made for a healthier lifestyle.</div>
+      </div>
+    </section>
+
+    <section class="card products" aria-label="Premium Dry Fruits">
+      <div class="products-inner">
+        <div class="eyebrow">Our Collection</div>
+        <h2>Premium Dry Fruits</h2>
+        <div class="product-grid">
+        <figure class="product">
+          <img src="almonds.jpg" alt="Almonds" loading="lazy">
+          <figcaption>Almonds</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="blackraisins.jpg" alt="Black Raisins" loading="lazy">
+          <figcaption>Black Raisins</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="cashews.jpg" alt="Cashews" loading="lazy">
+          <figcaption>Cashews</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="chiaseeds.jpg" alt="Chia Seeds" loading="lazy">
+          <figcaption>Chia Seeds</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="dates.jpg" alt="Dates" loading="lazy">
+          <figcaption>Dates</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="driedcoconut.jpg" alt="Dried Coconut" loading="lazy">
+          <figcaption>Dried Coconut</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="driedfigs.jpg" alt="Dried Figs" loading="lazy">
+          <figcaption>Dried Figs</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="driedmango.jpg" alt="Dried Mango" loading="lazy">
+          <figcaption>Dried Mango</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="goldenraisins.jpg" alt="Golden Raisins" loading="lazy">
+          <figcaption>Golden Raisins</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="makhana.jpg" alt="Makhana" loading="lazy">
+          <figcaption>Makhana</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="pistachios.jpg" alt="Pistachios" loading="lazy">
+          <figcaption>Pistachios</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="pumpkinseeds.jpg" alt="Pumpkin Seeds" loading="lazy">
+          <figcaption>Pumpkin Seeds</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="raisins.jpg" alt="Raisins" loading="lazy">
+          <figcaption>Raisins</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="sunflowerseeds.jpg" alt="Sunflower Seeds" loading="lazy">
+          <figcaption>Sunflower Seeds</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="walnuts.jpg" alt="Walnuts" loading="lazy">
+          <figcaption>Walnuts</figcaption>
+        </figure>
+        </div>
       </div>
     </section>
   </main>
