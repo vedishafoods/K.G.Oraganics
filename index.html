@@ -3,10 +3,148 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>K.G. Organics</title>
+  <title>KG Organics</title>
+  <meta name="description" content="KG Organics offers natural products, premium dry fruits, and delicious dry fruit laddus.">
+  <style>
+    :root {
+      --green: #2f6b3f;
+      --light: #f7f4eb;
+      --accent: #b8893c;
+      --text: #243025;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #fffdf8 0%, #f5efe1 100%);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+
+    .card {
+      width: min(980px, 100%);
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(8px);
+      border-radius: 28px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .image {
+      background: radial-gradient(circle at top, rgba(47,107,63,0.16), transparent 60%), var(--light);
+      padding: 42px;
+      display: grid;
+      place-items: center;
+    }
+
+    .image img {
+      width: min(320px, 100%);
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .content {
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.05;
+      color: var(--green);
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .chip {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid rgba(47,107,63,0.15);
+      font-size: 0.95rem;
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    .footer-note {
+      margin-top: 6px;
+      color: #5b5b5b;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 800px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+
+      .content,
+      .image {
+        padding: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to K.G. Organics</h1>
-  <p>This is the index page.</p>
+  <main class="hero">
+    <section class="card" aria-label="KG Organics introduction">
+      <div class="image">
+        <img src="kgorganicslogo.png" alt="KG Organics logo">
+      </div>
+      <div class="content">
+        <div class="eyebrow">Welcome to KG Organics</div>
+        <h1>Pure Natural Goodness</h1>
+        <p>
+          KG Organics brings you a thoughtful collection of natural products,
+          premium dry fruits, and delicious dry fruit laddus made with care and quality.
+        </p>
+        <p>
+          From wholesome everyday essentials to nourishing treats, we celebrate the taste
+          of nature in every bite.
+        </p>
+        <div class="highlights">
+          <div class="chip">Natural Products</div>
+          <div class="chip">Premium Dry Fruits</div>
+          <div class="chip">Dry Fruit Laddu</div>
+        </div>
+        <div class="footer-note">Fresh, flavorful, and made for a healthier lifestyle.</div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
